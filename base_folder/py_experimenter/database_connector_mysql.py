@@ -1,13 +1,13 @@
 import logging
 import sys
+from datetime import datetime
 from typing import List
 
 import mysql
 import numpy as np
-from mysql.connector import connect, ProgrammingError, DatabaseError, Error, errorcode
-from datetime import datetime
 import pandas as pd
 import py_experimenter.utils as utils
+from mysql.connector import DatabaseError, Error, ProgrammingError, connect, errorcode
 from py_experimenter.database_connector import DatabaseConnector
 
 

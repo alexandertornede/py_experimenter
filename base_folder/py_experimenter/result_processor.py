@@ -1,9 +1,9 @@
 import logging
+from datetime import datetime
 from typing import List
 
 from py_experimenter.database_connector_lite import DatabaseConnectorLITE
 from py_experimenter.database_connector_mysql import DatabaseConnectorMYSQL
-from datetime import datetime
 
 result_logger = logging.getLogger('result_logger')
 result_logger.setLevel(logging.INFO)
@@ -14,7 +14,7 @@ file_handler = logging.FileHandler('result.log')
 file_handler.setFormatter(formatter)
 
 result_logger.addHandler(file_handler)
-
+ 
 
 class ResultProcessor:
     """

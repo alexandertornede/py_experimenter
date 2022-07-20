@@ -1,11 +1,11 @@
 import logging
 import sys
+from datetime import datetime
+from sqlite3 import DatabaseError, Error, ProgrammingError, connect
 from typing import List
 
 import mysql
 import numpy as np
-from sqlite3 import connect, ProgrammingError, Error, DatabaseError
-from datetime import datetime
 import pandas as pd
 import py_experimenter.utils as utils
 from py_experimenter.database_connector import DatabaseConnector

@@ -146,7 +146,6 @@ def execution_wrapper(approach, custom_config: dict, parameters, result_processo
             logging.debug(f"Start of approach on process {socket.gethostname()}")
             approach(parameters, result_processor, custom_config)
 
-
             # TODO: Error?
         except Exception:
             error_msg = traceback.format_exc()
@@ -157,5 +156,3 @@ def execution_wrapper(approach, custom_config: dict, parameters, result_processo
         else:
             # set status to done
             result_processor._change_status('done')
-
-

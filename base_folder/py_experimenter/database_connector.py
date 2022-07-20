@@ -33,7 +33,6 @@ class DatabaseConnector:
         """
         pass
 
-
     def _update_database(self, keys, values, where):
         pass
 
